@@ -30,12 +30,13 @@ export default function PriceSimulator() {
     setCarregando(true);
     try {
       const response = await axios.get(
-        `http://127.0.0.1:5000/price?query=${encodeURIComponent(
+        `https://quanto-vale-back.onrender.com/price?query=${encodeURIComponent(
           produto
         )}&anoCompra=${encodeURIComponent(anoCompra)}&estado=${encodeURIComponent(
           estado
         )}`
       );
+      
       // Agora, o frontend verifica a chave "average_price"
       if (response.data.average_price) {
         setPrecoCalculado(response.data.average_price);
