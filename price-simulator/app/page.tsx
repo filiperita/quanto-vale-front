@@ -11,6 +11,7 @@ export default function PriceSimulator() {
   const [carregando, setCarregando] = useState(false);
   const [erro, setErro] = useState("");
   const [showPrice, setShowPrice] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     if (precoCalculado !== null) {
@@ -32,12 +33,11 @@ export default function PriceSimulator() {
       const response = await axios.get(
         `https://quanto-vale-back.onrender.com/price?query=${encodeURIComponent(
           produto
-        )}&anoCompra=${encodeURIComponent(anoCompra)}&estado=${encodeURIComponent(
-          estado
-        )}`
+        )}&anoCompra=${encodeURIComponent(
+          anoCompra
+        )}&estado=${encodeURIComponent(estado)}`
       );
-      
-      // Agora, o frontend verifica a chave "average_price"
+
       if (response.data.average_price) {
         setPrecoCalculado(response.data.average_price);
       } else {
@@ -51,7 +51,6 @@ export default function PriceSimulator() {
 
   return (
     <>
-      {/* Container com fundo azul para header, hero e formulário */}
       <div className="min-h-screen bg-gradient-to-r from-blue-300 to-blue-500">
         {/* Header */}
         <header className="fixed top-0 left-0 right-0 z-10 bg-white bg-opacity-80 backdrop-blur-lg">
@@ -60,35 +59,66 @@ export default function PriceSimulator() {
               <img src="/logo.png" alt="Logo" className="h-10" />
               <h1 className="text-2xl font-bold text-blue-800">QuantoVale</h1>
             </div>
-            <nav className="space-x-4">
-              <a
-                href="#sobre"
-                className="text-blue-800 hover:text-blue-600 transition-all duration-300 font-medium"
-              >
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex space-x-4">
+              <a href="#sobre" className="text-blue-800 hover:text-blue-600 font-medium">
                 Sobre
               </a>
-              <a
-                href="#como-funciona"
-                className="text-blue-800 hover:text-blue-600 transition-all duration-300 font-medium"
-              >
+              <a href="#como-funciona" className="text-blue-800 hover:text-blue-600 font-medium">
                 Como Funciona
               </a>
-              <a
-                href="#por-que-usar"
-                className="text-blue-800 hover:text-blue-600 transition-all duration-300 font-medium"
-              >
+              <a href="#por-que-usar" className="text-blue-800 hover:text-blue-600 font-medium">
                 Por que Usar
               </a>
-              <a
-                href="#contato"
-                className="text-blue-800 hover:text-blue-600 transition-all duration-300 font-medium"
-              >
+              <a href="#contato" className="text-blue-800 hover:text-blue-600 font-medium">
                 Contato
               </a>
             </nav>
-          </div>
-        </header>
 
+            {/* Mobile Burger Menu */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                className="text-blue-800 focus:outline-none"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Mobile Menu Dropdown */}
+          {menuOpen && (
+            <div className="md:hidden px-6 pb-4 space-y-2 bg-white bg-opacity-95">
+              <a href="#sobre" className="block text-blue-800 font-medium">
+                Sobre
+              </a>
+              <a href="#como-funciona" className="block text-blue-800 font-medium">
+                Como Funciona
+              </a>
+              <a href="#por-que-usar" className="block text-blue-800 font-medium">
+                Por que Usar
+              </a>
+              <a href="#contato" className="block text-blue-800 font-medium">
+                Contato
+              </a>
+            </div>
+          )}
+        </header>
+      
         {/* Conteúdo Principal (Hero e Formulário) */}
         <main className="pt-20 container mx-auto px-4 pb-32">
           {/* Hero Section */}
