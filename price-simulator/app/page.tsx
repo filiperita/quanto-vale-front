@@ -69,7 +69,7 @@ export default function PriceSimulator() {
                 Como Funciona
               </a>
               <a href="#por-que-usar" className="text-blue-800 hover:text-blue-600 font-medium">
-                Por que Usar
+                Porquê Usar
               </a>
               <a href="#contato" className="text-blue-800 hover:text-blue-600 font-medium">
                 Contato
@@ -110,7 +110,7 @@ export default function PriceSimulator() {
                 Como Funciona
               </a>
               <a href="#por-que-usar" className="block text-blue-800 font-medium">
-                Por que Usar
+                Porquê Usar
               </a>
               <a href="#contato" className="block text-blue-800 font-medium">
                 Contato
