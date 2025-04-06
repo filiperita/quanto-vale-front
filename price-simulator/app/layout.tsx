@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'QuantoVale | Avalia o preço do teu produto usado',
   description: 'Calcula quanto vale o teu produto usado de forma rápida e gratuita.',
+  icons: {
+    icon: "/favicon.ico", // Certifica-te que este ficheiro está em /public
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt">
+      <head />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
