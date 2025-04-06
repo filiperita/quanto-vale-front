@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'QuantoVale | Avalia o preço do teu produto usado',
-  description: 'Calcula quanto vale o teu produto usado de forma rápida e gratuita.',
+  title: "QuantoVale | Avalia o preço do teu produto usado",
+  description: "Calcula quanto vale o teu produto usado de forma rápida e gratuita.",
   icons: {
-    icon: "/favicon.ico", // Certifica-te que este ficheiro está em /public
+    icon: "/favicon.ico",
   },
 };
 
@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <head />
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
