@@ -124,7 +124,7 @@ export default function PriceSimulator() {
           {/* Hero Section */}
           <section className="text-center py-12">
             <h2 className="text-5xl font-extrabold text-white mb-6">
-              Descubre o valor do teu produto usado
+              Descobre o valor do teu produto usado
             </h2>
             <p className="text-xl text-white mb-8">
               Preenche o formulário e aguarda alguns segundos pelo resultado
