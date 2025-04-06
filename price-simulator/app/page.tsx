@@ -176,8 +176,8 @@ export default function PriceSimulator() {
           <h3 className="text-3xl font-bold text-blue-800 mb-4 text-center">
             Sobre
           </h3>
-          <p className="text-lg text-gray-800 italic text-center">
-            "Antes de venderes, informa-te. O QuantoVale dá-te uma estimativa justa do valor dos teus produtos usados, para que não fiques a perder."
+          <p className="text-lg text-gray-800 text-center">
+            Antes de venderes, informa-te. O QuantoVale dá-te uma estimativa justa do valor dos teus produtos usados, para que não fiques a perder.
           </p>
         </div>
       </div>
@@ -197,7 +197,7 @@ export default function PriceSimulator() {
                 Insira os Dados
               </h4>
               <p className="text-gray-700">
-                Informe as características do seu produto, como modelo, ano de compra e estado.
+                Indica as características do teu produto, como modelo, ano de compra e estado.
               </p>
             </div>
             <div className="text-center">
@@ -216,10 +216,10 @@ export default function PriceSimulator() {
                 3
               </div>
               <h4 className="text-xl font-bold text-blue-800 mb-2">
-                Receba a Estimativa
+                Recebe a Estimativa
               </h4>
               <p className="text-gray-700">
-                Veja o valor estimado e um range de preços para negociar com confiança.
+                Vê o valor estimado e um range de preços para negociar com confiança.
               </p>
             </div>
           </div>
@@ -230,17 +230,17 @@ export default function PriceSimulator() {
       <div id="por-que-usar" className="bg-white py-12">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-blue-800 mb-4 text-center">
-            Por que Usar o QuantoVale?
+            Porquê Usar o QuantoVale?
           </h3>
           <ul className="text-lg text-gray-800 space-y-4 max-w-3xl mx-auto">
             <li>
-              <strong>Transparência:</strong> Obtenha uma estimativa baseada em dados reais do mercado.
+              <strong>Transparência:</strong> Obtém uma estimativa baseada em dados reais do mercado.
             </li>
             <li>
-              <strong>Confiabilidade:</strong> Nossa análise considera diversos fatores, garantindo um valor justo para o seu produto.
+              <strong>Confiabilidade:</strong> A nossa análise considera diversos fatores, garantindo um valor justo para o teu produto.
             </li>
             <li>
-              <strong>Facilidade:</strong> Em apenas alguns passos, você descobre quanto vale o seu produto e pode negociar com confiança.
+              <strong>Facilidade:</strong> Em apenas alguns passos, descobre quanto vale o teu produto e podes negociá-lo com confiança.
             </li>
           </ul>
         </div>
@@ -256,7 +256,7 @@ export default function PriceSimulator() {
                 QuantoVale
               </h4>
               <p className="text-gray-700">
-                Uma ferramenta para ajudar você a descobrir o valor justo dos seus produtos usados.
+                Uma ferramenta que te ajuda a descobrir o valor justo dos teus produtos usados.
               </p>
             </div>
             {/* Coluna 2: Navegação */}
