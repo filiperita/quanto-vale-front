@@ -176,7 +176,7 @@ export default function PriceSimulator() {
           <h3 className="text-3xl font-bold text-blue-800 mb-4 text-center">
             Sobre
           </h3>
-          <p className="text-lg text-gray-800 text-center">
+          <p className="text-lg text-gray-800 italic text-center">
             Antes de venderes, informa-te. O QuantoVale dá-te uma estimativa justa do valor dos teus produtos usados, para que não fiques a perder.
           </p>
         </div>
