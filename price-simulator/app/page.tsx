@@ -256,7 +256,7 @@ export default function PriceSimulator() {
                 QuantoVale
               </h4>
               <p className="text-gray-700">
-                Uma ferramenta para ajudar você a descobrir o valor justo dos seus produtos usados.
+                Uma ferramenta que te ajuda a descobrir o valor justo dos seus produtos usados.
               </p>
             </div>
             {/* Coluna 2: Navegação */}
