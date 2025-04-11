@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Analytics from "./analytics";
-
+import Analytics from "./analytics"; // ✅ Importação correta no topo
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,15 +35,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        import Analytics from "./analytics"; // ou caminho relativo correto
-
-...
-
-<body className="...">
-  {children}
-  <Analytics />
-</body>
-
+        <Analytics />
       </body>
     </html>
   );
