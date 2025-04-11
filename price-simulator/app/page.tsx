@@ -316,9 +316,9 @@ export default function PriceSimulator() {
               </h4>
               <ul className="text-gray-700">
                 <li>
-                  Email: <a href="mailto:contato@quantovali.pt" className="hover:text-blue-600">contato@quantovali.pt</a>
+                  Email: <a href="mailto:quanto.vale.suporte@gmail.com" className="hover:text-blue-600">quanto.vale.suporte@gmail.com</a>
                 </li>
-                <li>Telefone: (00) 0000-0000</li>
+
               </ul>
             </div>
           </div>
