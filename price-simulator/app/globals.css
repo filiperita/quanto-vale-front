@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* ---------- Variáveis de cor ---------- */
+/* ---------- Variáveis ---------- */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -13,7 +13,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* Dark‑mode */
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -21,43 +21,14 @@
   }
 }
 
-/* ---------- Regras base ---------- */
+/* Base */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ---------- Google Translate ---------- */
-
-/* 1) Esconde a barra cinzenta que o Google injecta no topo */
+/* (mantém só estas 2 linhas para garantir que a barra do Google
+   Translate — se voltares a activar — não apareça) */
 .goog-te-banner-frame.skiptranslate { display: none !important; }
-body { top: 0 !important; } /* evita deslocamento da página */
-
-/* 2) Tornar o widget discreto (remove fundo, icone e exagero de tamanho) */
-.goog-te-gadget {
-  font-family: inherit !important;
-  font-size: 0 !important;          /* esconde texto default "Powered by" */
-}
-
-.goog-te-gadget img {               /* esconde ícone "G" */
-  display: none !important;
-}
-
-.goog-te-combo {
-  background: transparent !important;
-  border: none !important;
-  padding: 4px 8px !important;
-  font-size: 0.875rem !important;   /* 14 px */
-  color: #2563eb !important;        /* azul consistente com o site */
-  cursor: pointer;
-}
-
-.goog-te-combo option {             /* opções no drop‑down */
-  color: #000;
-}
-
-/* Se quiseres esconder até o drop‑down e usar apenas "EN" como botão,
-   comenta a regra acima e adiciona:
-   #google_translate_element select { display: none; }
-*/
+body { top: 0 !important; }
